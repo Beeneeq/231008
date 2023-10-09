@@ -68,6 +68,20 @@
 	  margin: -1px;
 	  overflow: hidden;
   }
+  .is-pc {
+    display: block !important;
+  }
+  .is-m {
+    display: none !important;
+  }
+  @media (max-width: 768px) {
+    .is-pc {
+      display: none !important;
+    }
+    .is-m {
+      display: block !important;
+    }
+  }
   
   /* 고정 */
   html.fixed , body.fixed {overflow:hidden; touch-action:none; -webkit-touch-action:none;}
@@ -84,7 +98,8 @@
   a:visited {text-decoration:none;}
   a:hover {text-decoration:none;}
   a , button {outline:0;display:inline-block;vertical-align:top;box-sizing:border-box;cursor:pointer;background:none;color: #333;}
-  
+  strong {font-weight: bold; font-size: inherit; line-height: inherit;}
+
   /* 이미지 */
   img , fieldset {border:none;}
   img , object {vertical-align:top;}
@@ -111,7 +126,7 @@
 	  --indigo: #3F51B5;
 	  --purple: #663399;
 	  --pink: #CB3066;
-	  --red: #f44336;
+	  --red: #d32d40;
 	  --orange: #e97d23;
 	  --yellow: #ffc107;
 	  --green: #4caf50;
@@ -122,7 +137,7 @@
 	  --gray-dark: #52495a;
 	  --purple: #663399;
 	  --pink: #CB3066;
-	  --red: #f44336;
+	  --red: #d32d40;
 	  --orange: #e97d23;
 	  --yellow: #ffc107;
 	  --green: #4caf50;
