@@ -1,7 +1,6 @@
 .wrapper {
     max-width: 1100px;
     margin: auto;
-    padding-bottom: 100px;
     padding-top: 100px;
     text-align: center;
 }
@@ -279,6 +278,124 @@ h2.title {
     margin-top: 5px;
     font-size: 27px;
 }
+
+.more-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.test-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    text-align: center;
+}
+
+.test-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: #eee;
+}
+
+.test-item:nth-of-type(1) .test-img {
+    background: #eee url("../images/sec06_01.png") no-repeat center / 50%;
+}
+
+.test-item:nth-of-type(2) .test-img {
+    background: #eee url("../images/sec06_02.png") no-repeat center / 50%;
+}
+
+.test-item:nth-of-type(3) .test-img {
+    background: #eee url("../images/sec06_03.png") no-repeat center / 40%;
+}
+
+.test-item:nth-of-type(4) .test-img {
+    background: #eee url("../images/sec06_04.png") no-repeat center / 40%;
+}
+
+.test-item:nth-of-type(5) .test-img {
+    background: #eee url("../images/sec06_05.png") no-repeat center / 50%;
+}
+
+.test-item:nth-of-type(6) .test-img {
+    background: #eee url("../images/sec06_06.png") no-repeat center / 50%;
+}
+
+.test-item:nth-of-type(7) .test-img {
+    background: #eee url("../images/sec06_07.png") no-repeat center / 50%;
+}
+
+.test-item:nth-of-type(8) .test-img {
+    background: #eee url("../images/sec06_08.png") no-repeat center / 50%;
+}
+
+.test-text {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.more-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.test-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    text-align: center;
+}
+
+.test-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: #eee;
+}
+
+.test-text {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.more-table-wrap {
+    margin-top: 50px;
+}
+
+.more-table {
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+
+.more-table th, .more-table td {
+    padding: 20px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.more-table th {
+    background: #daeeff;
+    border-bottom: 1px solid #fff;
+}
+
+.more-table td {
+    border-bottom: 1px solid #eee;
+}
+
+.more-table tr:last-child th {
+    border: none;
+}
+
+.more-table tr:last-child td {
+    border: none;
+}
+
+
 
 @media (max-width: 1100px) {
     .sec02 {
@@ -602,12 +719,25 @@ h3.title {
 
 /* section 06 */
 
+.sec06 {
+    margin-top: 50px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+    background: #f0f0f0;
+}
+
+.sec06-box {
+    max-width: 1100px;
+    margin: auto;
+}
+
 .acco-btn {
     position: relative;
     width: 100%;
     margin-top: 50px;
     padding: 25px 40px;
-    background: #666666;
+    background: #888;
 }
 
 .acco-btn::after {
@@ -644,7 +774,6 @@ h3.title {
 
 .acco-item .title {
     padding: 15px 40px;
-    background: #fff;
     border-bottom: 1px solid #ccc;
     font-size: 22px;
     font-weight: bold;
@@ -652,7 +781,6 @@ h3.title {
 
 .acco-item .text {
     padding: 20px 40px;
-    background: #fff;
     font-size: 20px;
     color: #333;
     line-height: 1.6;
@@ -709,7 +837,7 @@ h3.title {
 .btn-primary {
     display: inline-block;
     margin-top: 50px;
-    padding: 15px 30px;
+    padding: 15px 50px;
     background: #124485;
     color: #fff;
     border-radius: 50px;
@@ -718,8 +846,9 @@ h3.title {
 }
 
 .btn-primary span {
-    font-size: 30px;
-    line-height: 30px;
+    font-size: 28px;
+    line-height: 28px;
+    font-weight: bold;
 }
 
 .btn-more span::after {
@@ -729,4 +858,19 @@ h3.title {
     height: 17px;
     margin-left: 10px;
     background: url("../images/arrow_down02.png") no-repeat center / contain;
+}
+
+.btn-down {
+    background: #fff;
+    color: #124485;
+    border: 3px solid #124485;
+}
+
+.btn-down span::after {
+    content: '';
+    display: inline-block;
+    width:22px;
+    height: 20px;
+    margin-left: 10px;
+    background: url("../images/icon_down.png") no-repeat center / contain;
 }
