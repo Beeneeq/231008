@@ -117,9 +117,13 @@
             <button class="btn-primary btn-more" type="button"><span>건강검진 서비스 알아보기</span></button>
 
             <div id="moreWrap" class="more-wrap">
-                <h4 class="more-title">
+                <h4 class="more-title is-pc">
                     한국의료진과 상담을 통한 검진 항목 추천 및 검진 결과에 따른<br>
                     국내외 협력병원들과 연계서비스를 제공합니다
+                </h4>
+                <h4 class="more-title type01 is-m">
+                    한국의료진과 상담을 통한<br>검진 항목 추천 및 검진 결과에 따른<br>
+                    국내외 협력병원들과<br>연계서비스를 제공합니다
                 </h4>
                 <div class="more-box">
                     <ul class="test-list">
@@ -159,16 +163,74 @@
                     <img src="./asset/images/sec06_09.png" alt="전국 의료 네트워크">
                 </div>
 
-                <h4 class="more-title">
+                <h4 class="more-title is-pc">
+                    건강검진 서비스<br>
+                    <p class="more-text">※ 협약된 병원을 통한 합리적인 건강 검진 서비스를 제공</p>
+                </h4>
+                <h4 class="more-title is-m">
                     건강검진 서비스<br>
                     <p class="more-text">※ 협약된 병원을 통한 합리적인 건강 검진 서비스를 제공</p>
                 </h4>
 
-                <div class="more-table-wrap">
+                <div class="more-table-wrap is-pc">
                     <table class="more-table">
                         <colgroup>
-                            <col style="width: 20%;">
-                            <col style="width: 80%;">
+                            <col style="width: 20%">
+                            <col>
+                        </colgroup> 
+                        <tbody>
+                            <tr>
+                                <th>구분</th>
+                                <td>설명</td>
+                            </tr>
+                            <tr>
+                                <th>기초 검사</th>
+                                <td>신장, 청력, 혈압, 체중, 체질량 지수 허리둘레</td>
+                            </tr>
+                            <tr>
+                                <th>안과 검사</th>
+                                <td>시력 측정, 백내장 및 당뇨에 의한 안저 변화</td>
+                            </tr>
+                            <tr>
+                                <th>동맥 경화 검사</th>
+                                <td>동맥 경화의 위험성 확인</td>
+                            </tr>
+                            <tr>
+                                <th>심전도 검사</th>
+                                <td>심근경색, 및 부정맥 확인</td>
+                            </tr>
+                            <tr>
+                                <th>소변 검사</th>
+                                <td>방광염, 신우염, 무균성, 농뇨, 신장염, 요로증, 결석등을 확인</td>
+                            </tr>
+                            <tr>
+                                <th>혈액 검사</th>
+                                <td>빈혈, 백혈병 급성 감염증, 골수 기능 부전, 혈소판증가 감소, 급만성 간염, 간암, 담도암, 골의 악성 종양, 담도계 질환, 폐색성 황달 고지혈증, 간경변, 혈당, B형간염 항체 여부, 신장 기능 장애, DNA 유전자 검사 등</td>
+                            </tr>
+                            <tr>
+                                <th>초음파 검사</th>
+                                <td>간암, 간경화, 신장암, 신장결석, 비장암, 췌장, 담낭암, 담낭 결석, 갑상선암, 갑상선 비대, 난소암, 자궁근종, 자궁 내막염, 전립선암, 전립선 비대증, 전립선염, 동맥경화증, 뇌졸증</td>
+                            </tr>
+                            <tr>
+                                <th>X-RAY 검사</th>
+                                <td>폐결핵, 폐렴, 폐암, 심부전, 종격동 종양, 섬유성 낭종, 섬유선종</td>
+                            </tr>
+                            <tr>
+                                <th>내시경 검사</th>
+                                <td>위, 십이지장염, 궤양, 위암, 식도염, 식도암 등</td>
+                            </tr>
+                            <tr>
+                                <th>CT 검사</th>
+                                <td>뇌종양, 뇌출혈, 뇌경색, 허리디스크, 목디스크, 경추질환, 관상동맥 석회화 등을 확인</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="more-table-wrap is-m">
+                    <table class="more-table">
+                        <colgroup>
+                            <col style="width: 120px">
+                            <col>
                         </colgroup> 
                         <tbody>
                             <tr>
@@ -264,7 +326,8 @@
     <section class="sec06">
         <div class="sec06-box">
 
-            <h3 class="title mt0">플라잉닥터스 글로벌케어 서비스 상세 내역</h3>
+            <h3 class="title mt0 is-pc">플라잉닥터스 글로벌케어 서비스 상세 내역</h3>
+            <h3 class="title mt0 is-m">플라잉닥터스 글로벌케어<br>서비스 상세 내역</h3>
     
             <button class="acco-btn">
                 <h5 class="acco-title">해외의료지원 서비스</h5>
@@ -395,6 +458,11 @@
         $('.acco-btn').on('click', function() {
             $(this).toggleClass('on');
             $(this).next('.acco-list').off().slideToggle(500);
+        });
+
+        $('.btn-more').on('click', function() {
+            $(this).toggleClass('on');
+            $('#moreWrap').off().slideToggle(500);
         });
     </script>
 </body>
